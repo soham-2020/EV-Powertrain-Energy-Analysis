@@ -6,8 +6,7 @@ This project presents a MATLAB/Simulink-based Electric Vehicle (EV) powertrain s
 An interactive MATLAB App Designer dashboard is integrated with the Simulink model to visualize real-time EV performance and battery behavior.
 
 The project is developed from a core electrical engineering perspective, emphasizing energy flow, motor control, and system-level analysis.
-
-🎯 Objectives
+Objectives
 
 Model a complete EV powertrain architecture
 
@@ -18,8 +17,7 @@ Study the effect of speed demand on energy consumption
 Visualize EV performance using a MATLAB App
 
 Demonstrate understanding of electric drives and energy systems
-
-⚙️ System Architecture
+System Architecture
 
 The EV model follows a standard powertrain structure:
 
@@ -27,7 +25,7 @@ Battery → Inverter (PWM) → Motor Drive → Vehicle Dynamics
                           ↑
                    Speed Control Loop
 
-Subsystems Included:
+Subsystems Included
 
 Battery model with SOC estimation
 
@@ -38,53 +36,23 @@ Electric motor drive
 Closed-loop speed controller
 
 Vehicle dynamics model
-
-🔋 Battery & SOC Modeling
+attery & SOC Modeling
 
 Battery State of Charge (SOC) is calculated using current integration:
 
-𝑆
-𝑂
-𝐶
-(
-𝑡
-)
-=
-𝑆
-𝑂
-𝐶
-(
-0
-)
-−
-1
-𝐶
-∫
-𝐼
-(
-𝑡
-)
- 
-𝑑
-𝑡
-SOC(t)=SOC(0)−
-C
-1
-	​
+SOC(t) = SOC(0) − (1 / C) ∫ I(t) dt
 
-∫I(t)dt
 
 SOC is constrained within safe operating limits
 
 Battery voltage, current, and discharge trends are monitored
 
 Energy consumption varies with vehicle speed and load
-
-🖥️ MATLAB App Designer Dashboard
+MATLAB App Designer Dashboard
 
 A MATLAB App Designer interface is used to visualize simulation results.
 
-App Features:
+App Features
 
 Run simulation control
 
@@ -97,8 +65,7 @@ Battery voltage visualization
 Real-time monitoring of EV performance
 
 The app helps analyze how driving conditions impact battery discharge and efficiency.
-
-🧪 Simulation Scenarios
+imulation Scenarios
 
 The model supports:
 
@@ -111,8 +78,7 @@ Load variation
 Different speed references
 
 These scenarios are used to evaluate energy demand, SOC depletion rate, and system response.
-
-🛠 Tools & Technologies
+Tools & Technologies
 
 MATLAB
 
