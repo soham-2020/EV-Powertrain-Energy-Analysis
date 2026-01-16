@@ -1,4 +1,5 @@
 EV Powertrain Energy Analysis (MATLAB / Simulink)
+
 📌 Project Overview
 
 This project presents a MATLAB/Simulink-based Electric Vehicle (EV) powertrain simulation focused on analyzing battery discharge, State of Charge (SOC), energy consumption, and vehicle speed response under different driving conditions.
